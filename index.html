@@ -98,7 +98,12 @@
           website within few minutes.
         </p>
       </div>
-      <form action="index.html" method="POST" id="newsform">
+      <form
+        onsubmit="return alert('Form Submitted');"
+        action="index.html"
+        method="POST"
+        id="newsform"
+      >
         <label class="first" for="fname">First name:</label>
         <input
           required
