@@ -381,8 +381,8 @@ form button:hover {
 
 .left-image img {
   object-fit: cover;
-  width: 500px;
-  height: 400px;
+  width: 450px;
+  height: 350px;
   border-radius: 15px;
 }
 
@@ -405,7 +405,7 @@ form button:hover {
 }
 
 .right-text p {
-  margin-top: 50px;
+  margin-top: 20px;
   width: 400px;
   font-weight: 400;
   font-size: 17px;
@@ -506,80 +506,63 @@ form button:hover {
 
 @media screen and (max-width: 1024px) {
   nav li {
-    margin: 0 50px;
-    cursor: pointer;
-  }
-
-  .left-image img {
-    width: 400px;
-    height: 350px;
-  }
-
-  .right-text h2 {
-    margin-top: 70px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  nav li {
     margin: 0 20px;
     cursor: pointer;
   }
 
-  .text-area {
-    padding: 70px 40px;
+  .left-image img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .right-text h1 {
+    width: auto;
+  }
+
+  .right-text h2 {
+    margin-top: 70px;
+    width: auto;
+  }
+
+  .right-text p {
+    width: auto;
   }
 
   .text-area h1 {
     font-size: 40px;
     line-height: 50px;
+    margin-top: 30px;
   }
 
-  #benefits {
-    padding: 0;
-    height: 400px;
+  .text-area h2 {
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 4px;
+    margin-top: 40px;
   }
 
-  .card {
-    width: 200px;
+  .text-area p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #1d263a;
+    opacity: 0.7;
+    margin-top: 30px;
   }
 
   form {
-    margin: 100px auto;
-  }
-
-  form input {
-    width: 100%;
-  }
-
-  form button {
-    width: 300px;
-  }
-
-  .right-text {
-    margin-top: 20px;
-  }
-
-  .right-text h1 {
-    width: 350px;
-  }
-
-  .right-text p {
-    margin-top: 30px;
-    width: 300px;
-  }
-
-  .right-text h2 {
-    margin-top: 80px;
-  }
-
-  .left-image img {
-    width: 300px;
-    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    column-gap: 60px;
+    margin-top: 100px;
+    align-self: center;
+    align-items: start;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   nav {
     flex-direction: column;
   }
@@ -594,7 +577,7 @@ form button:hover {
   }
 
   nav li {
-    margin: 0 5px;
+    margin: 0 10px;
   }
 
   body {
@@ -823,20 +806,23 @@ form button:hover {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   nav li {
     margin: 0 3px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  nav li {
+    margin: 5px 0;
+  }
+  nav ul {
+    flex-direction: column;
   }
 }
 
 @media screen and (max-width: 320px) {
-  nav ul {
-    flex-direction: column;
-  }
-  nav li {
-    margin: 5px 0px;
-  }
-
   form button {
     width: 280px;
   }
